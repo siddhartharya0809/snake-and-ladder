@@ -1,0 +1,39 @@
+.dice {
+  border: 2px solid #333;
+  border-radius: 5px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.dice:hover {
+  cursor: pointer;
+}
+
+.dice-roll {
+  animation-name: roll;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(720deg);
+  }
+  75% {
+    transform: rotate(1080deg);
+  }
+  100% {
+    transform: rotate(1440deg);
+  }
+}
